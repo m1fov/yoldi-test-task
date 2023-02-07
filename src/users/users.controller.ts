@@ -53,6 +53,10 @@ export class UsersController {
     description: "Пользователь не найден",
   })
   @ApiResponse({
+    status: 409,
+    description: "Данный URN уже занят",
+  })
+  @ApiResponse({
     status: 500,
     description: "Запрос закончился исключением",
   })
